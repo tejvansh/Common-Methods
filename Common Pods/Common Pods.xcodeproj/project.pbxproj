@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C780AA501B0AF10500F19A16 /* AFAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C780A9C51B0AF10500F19A16 /* AFAPIClient.m */; };
+		C780AA511B0AF10500F19A16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C780A9C71B0AF10500F19A16 /* AppDelegate.m */; };
+		C780AA521B0AF10500F19A16 /* CommonMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = C780A9C91B0AF10500F19A16 /* CommonMethods.m */; };
+		C780AA531B0AF10500F19A16 /* UserDetailsModal.m in Sources */ = {isa = PBXBuildFile; fileRef = C780A9CD1B0AF10500F19A16 /* UserDetailsModal.m */; };
+		C780AA841B0AF10500F19A16 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = C780AA431B0AF10500F19A16 /* Toast.m */; };
+		C780AA861B0AF10500F19A16 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C780AA4A1B0AF10500F19A16 /* HomeViewController.m */; };
+		C780AA871B0AF10500F19A16 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C780AA4B1B0AF10500F19A16 /* HomeViewController.xib */; };
+		C780AA881B0AF10500F19A16 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C780AA4E1B0AF10500F19A16 /* MenuViewController.m */; };
+		C780AA891B0AF10500F19A16 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C780AA4F1B0AF10500F19A16 /* MenuViewController.xib */; };
+		C780AA961B0AF4AE00F19A16 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C780AA8C1B0AF4AE00F19A16 /* MMDrawerBarButtonItem.m */; };
+		C780AA971B0AF4AE00F19A16 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C780AA8F1B0AF4AE00F19A16 /* MMDrawerController.m */; };
+		C780AA981B0AF4AE00F19A16 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = C780AA911B0AF4AE00F19A16 /* MMDrawerVisualState.m */; };
+		C780AA991B0AF4AE00F19A16 /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C780AA931B0AF4AE00F19A16 /* MMExampleDrawerVisualStateManager.m */; };
+		C780AA9A1B0AF4AE00F19A16 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C780AA951B0AF4AE00F19A16 /* UIViewController+MMDrawerController.m */; };
+		C795A68D1B0A0319003387BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C795A68C1B0A0319003387BB /* main.m */; };
+		C795A6981B0A0319003387BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C795A6971B0A0319003387BB /* Images.xcassets */; };
+		C795A69B1B0A0319003387BB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C795A6991B0A0319003387BB /* LaunchScreen.xib */; };
+		C795A6A71B0A0319003387BB /* Common_PodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C795A6A61B0A0319003387BB /* Common_PodsTests.m */; };
+		DD019CED1BC57777B77CFFDE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C5BB9A2E361050893FB8793 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C795A6A11B0A0319003387BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C795A67F1B0A0319003387BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C795A6861B0A0319003387BB;
+			remoteInfo = "Common Pods";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C5BB9A2E361050893FB8793 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0208489BDED72CBB21C1A5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		628D9116D8C17BC1759A1E5B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C780A9C41B0AF10500F19A16 /* AFAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAPIClient.h; sourceTree = "<group>"; };
+		C780A9C51B0AF10500F19A16 /* AFAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAPIClient.m; sourceTree = "<group>"; };
+		C780A9C61B0AF10500F19A16 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C780A9C71B0AF10500F19A16 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C780A9C81B0AF10500F19A16 /* CommonMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethods.h; sourceTree = "<group>"; };
+		C780A9C91B0AF10500F19A16 /* CommonMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethods.m; sourceTree = "<group>"; };
+		C780A9CA1B0AF10500F19A16 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		C780A9CB1B0AF10500F19A16 /* FilesToImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilesToImport.h; sourceTree = "<group>"; };
+		C780A9CC1B0AF10500F19A16 /* UserDetailsModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailsModal.h; sourceTree = "<group>"; };
+		C780A9CD1B0AF10500F19A16 /* UserDetailsModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailsModal.m; sourceTree = "<group>"; };
+		C780AA421B0AF10500F19A16 /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
+		C780AA431B0AF10500F19A16 /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
+		C780AA491B0AF10500F19A16 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C780AA4A1B0AF10500F19A16 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C780AA4B1B0AF10500F19A16 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C780AA4D1B0AF10500F19A16 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		C780AA4E1B0AF10500F19A16 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		C780AA4F1B0AF10500F19A16 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		C780AA8B1B0AF4AE00F19A16 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		C780AA8C1B0AF4AE00F19A16 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		C780AA8D1B0AF4AE00F19A16 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		C780AA8E1B0AF4AE00F19A16 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		C780AA8F1B0AF4AE00F19A16 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		C780AA901B0AF4AE00F19A16 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		C780AA911B0AF4AE00F19A16 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		C780AA921B0AF4AE00F19A16 /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
+		C780AA931B0AF4AE00F19A16 /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
+		C780AA941B0AF4AE00F19A16 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		C780AA951B0AF4AE00F19A16 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		C795A6871B0A0319003387BB /* Common Pods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Common Pods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C795A68B1B0A0319003387BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C795A68C1B0A0319003387BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C795A6971B0A0319003387BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C795A69A1B0A0319003387BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C795A6A01B0A0319003387BB /* Common PodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Common PodsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C795A6A51B0A0319003387BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C795A6A61B0A0319003387BB /* Common_PodsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Common_PodsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C795A6841B0A0319003387BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD019CED1BC57777B77CFFDE /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C795A69D1B0A0319003387BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B023AB06169384389DC9496C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F0208489BDED72CBB21C1A5 /* Pods.debug.xcconfig */,
+				628D9116D8C17BC1759A1E5B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C780A9C31B0AF10500F19A16 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C780A9C41B0AF10500F19A16 /* AFAPIClient.h */,
+				C780A9C51B0AF10500F19A16 /* AFAPIClient.m */,
+				C780A9C61B0AF10500F19A16 /* AppDelegate.h */,
+				C780A9C71B0AF10500F19A16 /* AppDelegate.m */,
+				C780A9C81B0AF10500F19A16 /* CommonMethods.h */,
+				C780A9C91B0AF10500F19A16 /* CommonMethods.m */,
+				C780A9CA1B0AF10500F19A16 /* Constant.h */,
+				C780A9CB1B0AF10500F19A16 /* FilesToImport.h */,
+				C780A9CC1B0AF10500F19A16 /* UserDetailsModal.h */,
+				C780A9CD1B0AF10500F19A16 /* UserDetailsModal.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C780A9CE1B0AF10500F19A16 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C780AA8A1B0AF4AE00F19A16 /* MMDrawerController */,
+				C780AA411B0AF10500F19A16 /* Toast */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C780AA411B0AF10500F19A16 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				C780AA421B0AF10500F19A16 /* Toast.h */,
+				C780AA431B0AF10500F19A16 /* Toast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		C780AA471B0AF10500F19A16 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C780AA481B0AF10500F19A16 /* Home */,
+				C780AA4C1B0AF10500F19A16 /* Menu */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C780AA481B0AF10500F19A16 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C780AA491B0AF10500F19A16 /* HomeViewController.h */,
+				C780AA4A1B0AF10500F19A16 /* HomeViewController.m */,
+				C780AA4B1B0AF10500F19A16 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C780AA4C1B0AF10500F19A16 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C780AA4D1B0AF10500F19A16 /* MenuViewController.h */,
+				C780AA4E1B0AF10500F19A16 /* MenuViewController.m */,
+				C780AA4F1B0AF10500F19A16 /* MenuViewController.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		C780AA8A1B0AF4AE00F19A16 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				C780AA8B1B0AF4AE00F19A16 /* MMDrawerBarButtonItem.h */,
+				C780AA8C1B0AF4AE00F19A16 /* MMDrawerBarButtonItem.m */,
+				C780AA8D1B0AF4AE00F19A16 /* MMDrawerController+Subclass.h */,
+				C780AA8E1B0AF4AE00F19A16 /* MMDrawerController.h */,
+				C780AA8F1B0AF4AE00F19A16 /* MMDrawerController.m */,
+				C780AA901B0AF4AE00F19A16 /* MMDrawerVisualState.h */,
+				C780AA911B0AF4AE00F19A16 /* MMDrawerVisualState.m */,
+				C780AA921B0AF4AE00F19A16 /* MMExampleDrawerVisualStateManager.h */,
+				C780AA931B0AF4AE00F19A16 /* MMExampleDrawerVisualStateManager.m */,
+				C780AA941B0AF4AE00F19A16 /* UIViewController+MMDrawerController.h */,
+				C780AA951B0AF4AE00F19A16 /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		C795A67E1B0A0319003387BB = {
+			isa = PBXGroup;
+			children = (
+				C795A6891B0A0319003387BB /* Common Pods */,
+				C795A6A31B0A0319003387BB /* Common PodsTests */,
+				C795A6881B0A0319003387BB /* Products */,
+				B023AB06169384389DC9496C /* Pods */,
+				EE1B823BC95FE6C990A82BE9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C795A6881B0A0319003387BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C795A6871B0A0319003387BB /* Common Pods.app */,
+				C795A6A01B0A0319003387BB /* Common PodsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C795A6891B0A0319003387BB /* Common Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C780A9C31B0AF10500F19A16 /* Common */,
+				C780A9CE1B0AF10500F19A16 /* Utilities */,
+				C780AA471B0AF10500F19A16 /* Controllers */,
+				C795A6971B0A0319003387BB /* Images.xcassets */,
+				C795A6991B0A0319003387BB /* LaunchScreen.xib */,
+				C795A68A1B0A0319003387BB /* Supporting Files */,
+			);
+			path = "Common Pods";
+			sourceTree = "<group>";
+		};
+		C795A68A1B0A0319003387BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C795A68B1B0A0319003387BB /* Info.plist */,
+				C795A68C1B0A0319003387BB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C795A6A31B0A0319003387BB /* Common PodsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C795A6A61B0A0319003387BB /* Common_PodsTests.m */,
+				C795A6A41B0A0319003387BB /* Supporting Files */,
+			);
+			path = "Common PodsTests";
+			sourceTree = "<group>";
+		};
+		C795A6A41B0A0319003387BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C795A6A51B0A0319003387BB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE1B823BC95FE6C990A82BE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C5BB9A2E361050893FB8793 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C795A6861B0A0319003387BB /* Common Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C795A6AA1B0A0319003387BB /* Build configuration list for PBXNativeTarget "Common Pods" */;
+			buildPhases = (
+				EF31C42B3A004C685D236AD4 /* Check Pods Manifest.lock */,
+				C795A6831B0A0319003387BB /* Sources */,
+				C795A6841B0A0319003387BB /* Frameworks */,
+				C795A6851B0A0319003387BB /* Resources */,
+				E5515A205AEE8E8BF078653A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Common Pods";
+			productName = "Common Pods";
+			productReference = C795A6871B0A0319003387BB /* Common Pods.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C795A69F1B0A0319003387BB /* Common PodsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C795A6AD1B0A0319003387BB /* Build configuration list for PBXNativeTarget "Common PodsTests" */;
+			buildPhases = (
+				C795A69C1B0A0319003387BB /* Sources */,
+				C795A69D1B0A0319003387BB /* Frameworks */,
+				C795A69E1B0A0319003387BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C795A6A21B0A0319003387BB /* PBXTargetDependency */,
+			);
+			name = "Common PodsTests";
+			productName = "Common PodsTests";
+			productReference = C795A6A01B0A0319003387BB /* Common PodsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C795A67F1B0A0319003387BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Tatvasoft;
+				TargetAttributes = {
+					C795A6861B0A0319003387BB = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					C795A69F1B0A0319003387BB = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = C795A6861B0A0319003387BB;
+					};
+				};
+			};
+			buildConfigurationList = C795A6821B0A0319003387BB /* Build configuration list for PBXProject "Common Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C795A67E1B0A0319003387BB;
+			productRefGroup = C795A6881B0A0319003387BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C795A6861B0A0319003387BB /* Common Pods */,
+				C795A69F1B0A0319003387BB /* Common PodsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C795A6851B0A0319003387BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C795A69B1B0A0319003387BB /* LaunchScreen.xib in Resources */,
+				C795A6981B0A0319003387BB /* Images.xcassets in Resources */,
+				C780AA891B0AF10500F19A16 /* MenuViewController.xib in Resources */,
+				C780AA871B0AF10500F19A16 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C795A69E1B0A0319003387BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E5515A205AEE8E8BF078653A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF31C42B3A004C685D236AD4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C795A6831B0A0319003387BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C780AA531B0AF10500F19A16 /* UserDetailsModal.m in Sources */,
+				C780AA991B0AF4AE00F19A16 /* MMExampleDrawerVisualStateManager.m in Sources */,
+				C780AA881B0AF10500F19A16 /* MenuViewController.m in Sources */,
+				C780AA981B0AF4AE00F19A16 /* MMDrawerVisualState.m in Sources */,
+				C780AA501B0AF10500F19A16 /* AFAPIClient.m in Sources */,
+				C795A68D1B0A0319003387BB /* main.m in Sources */,
+				C780AA961B0AF4AE00F19A16 /* MMDrawerBarButtonItem.m in Sources */,
+				C780AA861B0AF10500F19A16 /* HomeViewController.m in Sources */,
+				C780AA971B0AF4AE00F19A16 /* MMDrawerController.m in Sources */,
+				C780AA9A1B0AF4AE00F19A16 /* UIViewController+MMDrawerController.m in Sources */,
+				C780AA841B0AF10500F19A16 /* Toast.m in Sources */,
+				C780AA511B0AF10500F19A16 /* AppDelegate.m in Sources */,
+				C780AA521B0AF10500F19A16 /* CommonMethods.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C795A69C1B0A0319003387BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C795A6A71B0A0319003387BB /* Common_PodsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C795A6A21B0A0319003387BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C795A6861B0A0319003387BB /* Common Pods */;
+			targetProxy = C795A6A11B0A0319003387BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C795A6991B0A0319003387BB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C795A69A1B0A0319003387BB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C795A6A81B0A0319003387BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C795A6A91B0A0319003387BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C795A6AB1B0A0319003387BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F0208489BDED72CBB21C1A5 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Common Pods/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CommonPods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C795A6AC1B0A0319003387BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 628D9116D8C17BC1759A1E5B /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Common Pods/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CommonPods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C795A6AE1B0A0319003387BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Common PodsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CommonPods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Common Pods.app/Common Pods";
+			};
+			name = Debug;
+		};
+		C795A6AF1B0A0319003387BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Common PodsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CommonPods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Common Pods.app/Common Pods";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C795A6821B0A0319003387BB /* Build configuration list for PBXProject "Common Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C795A6A81B0A0319003387BB /* Debug */,
+				C795A6A91B0A0319003387BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C795A6AA1B0A0319003387BB /* Build configuration list for PBXNativeTarget "Common Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C795A6AB1B0A0319003387BB /* Debug */,
+				C795A6AC1B0A0319003387BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C795A6AD1B0A0319003387BB /* Build configuration list for PBXNativeTarget "Common PodsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C795A6AE1B0A0319003387BB /* Debug */,
+				C795A6AF1B0A0319003387BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C795A67F1B0A0319003387BB /* Project object */;
+}

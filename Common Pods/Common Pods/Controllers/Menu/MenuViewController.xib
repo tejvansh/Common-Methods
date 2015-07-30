@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController">
+            <connections>
+                <outlet property="lblUserName" destination="93J-hA-yFj" id="ZNf-TG-V2N"/>
+                <outlet property="tblMenu" destination="iXk-TT-yNp" id="oOb-Gh-vqx"/>
+                <outlet property="view" destination="fn9-69-fCL" id="OGN-gB-Yel"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fn9-69-fCL">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="iXk-TT-yNp">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" white="0.66666666666666663" alpha="0.11" colorSpace="calibratedWhite"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="7FO-uU-SEM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93J-hA-yFj">
+                                <rect key="frame" x="20" y="0.0" width="355" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="93J-hA-yFj" secondAttribute="bottom" id="1HR-UN-9E4"/>
+                            <constraint firstItem="93J-hA-yFj" firstAttribute="top" secondItem="7FO-uU-SEM" secondAttribute="top" id="3ZY-1N-7wd"/>
+                            <constraint firstItem="93J-hA-yFj" firstAttribute="leading" secondItem="7FO-uU-SEM" secondAttribute="leading" constant="20" id="CFS-Aw-2eB"/>
+                            <constraint firstAttribute="height" constant="44" id="smm-Qj-wS4"/>
+                            <constraint firstAttribute="trailing" secondItem="93J-hA-yFj" secondAttribute="trailing" id="vDK-Nc-z0w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="P23-3m-usK"/>
+                        <outlet property="delegate" destination="-1" id="KAW-yL-VHa"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iXk-TT-yNp" firstAttribute="leading" secondItem="fn9-69-fCL" secondAttribute="leading" id="7t8-qA-HxO"/>
+                <constraint firstAttribute="trailing" secondItem="iXk-TT-yNp" secondAttribute="trailing" id="IT5-e2-1bD"/>
+                <constraint firstItem="iXk-TT-yNp" firstAttribute="top" secondItem="fn9-69-fCL" secondAttribute="top" constant="20" id="Ig5-IP-hd6"/>
+                <constraint firstAttribute="bottom" secondItem="iXk-TT-yNp" secondAttribute="bottom" id="z2T-kL-oTs"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="459.5" y="45.5"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
